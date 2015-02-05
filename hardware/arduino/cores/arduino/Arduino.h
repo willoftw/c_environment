@@ -110,8 +110,10 @@ void noInterrupts();
 void attachInterrupt(uint8_t, void (*)(void), int mode);
 void detachInterrupt(uint8_t);
 
+#ifndef ISLIB
 void setup(void);
 void loop(void);
+#endif
 
 extern int argc;
 extern char **argv;
